@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title id='title'>WebMote</title>
+        
+        <!-- ** CSS ** -->
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+        <!-- ** Javascript ** -->
+        <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/helpers.js"></script>
+
+    </head>
+    <body>
+
+   	<div class = "container">
+      <h1>Audio</h1>
+      <div class="row">
+        <div class="col-xs-4">
+          <p><button type="button" class="btn btn-success btn-lg" onclick="sendir('nad','on')">ON</button></p>
+          <p><button type="button" class="btn btn-danger btn-lg" onclick="sendir('nad','off')"> OFF </button></p>
+        </div>
+        <div class="col-xs-4">
+          <p><button type="button" class="btn btn-info btn-lg" onclick="sendir('nad','volup')"> Vol UP </button></p>
+          <p><button type="button" class="btn btn-info btn-lg" onclick="sendir('nad','voldown')"> Vol Down </button></p>
+        </div>
+        <div class="col-xs-4">
+          <p><button type="button" class="btn btn-warning btn-lg" onclick="sendir('nad','mp')"> Source: MP </button></p>
+          <p><button type="button" class="btn btn-warning btn-lg" onclick="sendir('nad','cd')"> Source: CD </button></p>
+		    </div>
+      </div>
+    </div>
+
+   	<div class = "container">
+      <h1>TV Audio</h1>
+      <div class="row">
+        <div class="col-xs-4">
+          <p><button type="button" class="btn btn-success btn-lg" onclick="sendir('sony','onoff')">ON/OFF</button></p>
+        </div>
+        <div class="col-xs-4">
+          <p><button type="button" class="btn btn-info btn-lg" onclick="sendir('sony','volup')"> Vol UP </button></p>
+          <p><button type="button" class="btn btn-info btn-lg" onclick="sendir('sony','voldown')"> Vol Down </button></p>
+		    </div>
+      </div>
+    </div>
+
+    </body>
+</html>
